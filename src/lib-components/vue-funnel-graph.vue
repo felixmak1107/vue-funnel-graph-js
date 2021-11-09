@@ -1,7 +1,7 @@
 <template>
     <div class="funnel svg-funnel-js" :class="{'svg-funnel-js--vertical': direction === 'vertical'}">
         <div class="svg-funnel-js__container">
-            <svg :width="width" :height="height">
+            <svg width="100%" height="100%">
                 <defs>
                     <linearGradient :id="`funnelGradient-${(index+1)}`"
                                     v-for="(colors, index) in gradientSet"
@@ -73,8 +73,8 @@
                 type: Boolean,
                 default: false
             },
-            width: [String, Number],
-            height: [String, Number],
+            // width: [String, Number],
+            // height: [String, Number],
             values: Array,
             labels: Array,
             colors: {
